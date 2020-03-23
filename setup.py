@@ -148,4 +148,4 @@ METADATA = dict(
 )
 
 if __name__ == '__main__':
-    setup(**METADATA, install_requires=['requests'])
+    setup(**METADATA)
