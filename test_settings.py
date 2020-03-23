@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     'allauth.socialaccount.providers.weibo',
     'allauth.socialaccount.providers.weixin',
     'allauth.socialaccount.providers.windowslive',
+    'allauth.socialaccount.providers.Wzlapp',
     'allauth.socialaccount.providers.xing',
     'allauth.socialaccount.providers.yahoo',
     'allauth.socialaccount.providers.yandex',

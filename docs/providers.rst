@@ -1796,6 +1796,18 @@ registration). Other ``SCOPE`` options are: snsapi_base, snsapi_userinfo.
     }
 
 
+Wzlapp
+-----
+
+App registration
+    https://api.slack.com/apps/new
+
+Development callback URL
+    http://example.com/accounts/slack/login/callback/
+
+API documentation
+    https://api.slack.com/docs/sign-in-with-slack
+
 Xing
 ----
 

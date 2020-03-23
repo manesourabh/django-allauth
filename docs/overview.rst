@@ -195,6 +195,8 @@ Supported Providers
 
 - Windows Live (OAuth2)
 
+- Wzlapp (OAuth2)
+
 - Xing (OAuth)
 
 - Yahoo (OAuth2)
