@@ -129,6 +129,7 @@ settings.py (Important - Please note 'django.contrib.sites' is required as INSTA
         'allauth.socialaccount.providers.weixin',
         'allauth.socialaccount.providers.windowslive',
         'allauth.socialaccount.providers.wzlapp',
+        'allauth.socialaccount.providers.wzlapp_local',
         'allauth.socialaccount.providers.xing',
         'allauth.socialaccount.providers.yandex',
         'allauth.socialaccount.providers.ynab',

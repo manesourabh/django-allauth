@@ -197,6 +197,8 @@ Supported Providers
 
 - Wzlapp (OAuth2)
 
+- WzlappLocal (OAuth2)
+
 - Xing (OAuth)
 
 - Yahoo (OAuth2)
