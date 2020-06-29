@@ -113,6 +113,8 @@ Supported Providers
 
 - Instagram (OAuth2)
 
+- IoppccLeaf (OAuth2)
+
 - JupyterHub (OAuth2)
 
 - Kakao (OAuth2)
