@@ -1,4 +1,5 @@
 import requests
+import socket
 from allauth.socialaccount.providers.oauth2.views import (OAuth2Adapter,
                                                           OAuth2LoginView,
                                                           OAuth2CallbackView)
@@ -9,8 +10,19 @@ from .provider import WzlappLocalProvider
 
 class WzlappLocalOAuth2Adapter(OAuth2Adapter):
     provider_id = WzlappLocalProvider.id
+    def get_ip():
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        try:
+            # doesn't even have to be reachable
+            s.connect(('10.255.255.255', 1))
+            IP = s.getsockname()[0]
+        except Exception:
+            IP = '127.0.0.1'
+        finally:
+            s.close()
+        return IP
 
-    base_url = 'http://localhost:3000/'
+    base_url = 'http://' + get_ip() + ':3000/'
     access_token_url = base_url + 'oauth/token'
     authorize_url = base_url + 'oauth/authorize'
     identity_url = base_url + 'api/user'
