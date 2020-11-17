@@ -11,7 +11,7 @@ from .provider import WzlappLocalProvider
 class WzlappLocalOAuth2Adapter(OAuth2Adapter):
     provider_id = WzlappLocalProvider.id
 
-    base_url = 'http://192.168.2.10:3000/'
+    base_url = 'http://10.182.176.107:3000/'
     access_token_url = base_url + 'oauth/token'
     authorize_url = base_url + 'oauth/authorize'
     identity_url = base_url + 'api/user'
